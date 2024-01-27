@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url(/images/Magor-bkg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 0;
+}
+/* ===== header  =====*/
+header {
+  width: 100%;
+  display: flex;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.151);
+  z-index: 10;
+}
+
+
+.planete {
+  width: 20%;
+  padding-left: 45px;
+}
+.img-planete {
+  width: 100px;
+}
+
+.img-planete:active {
+  width: 95px;
+}
+
+.title {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-title {
+  width: 700px;
+}
+
+.logout {
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-logout {
+  width: 100px;
+}
+.img-logout:hover {
+  width: 110px;
+}
+.img-logout:active {
+  width: 100px;
+}
+
+/* ==== corps =====*/
+
+.full-groupe{
+    width: 100%;
+    background-color: rgb(1, 245, 253);
+    color: aqua;
+}
