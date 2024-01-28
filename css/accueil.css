@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-image: url(/images/Magor-bkg.jpg);
+  /* background-image: url(/images/Magor-bkg.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -14,9 +14,8 @@ header {
   display: flex;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.151);
-  z-index: 10;
+  z-index: 1;
 }
-
 
 .planete {
   width: 20%;
@@ -58,8 +57,131 @@ header {
 
 /* ==== corps =====*/
 
-.full-groupe{
-    width: 100%;
-    background-color: rgb(1, 245, 253);
-    color: aqua;
+.full-groupe {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: rgb(1, 245, 253);
+  color: aqua;
+  height: 100%;
+  z-index: 2;
+}
+
+.groupe1 {
+  background-color: blueviolet;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding: 20px;
+}
+
+.groupe2 {
+  width: 20%;
+}
+
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+}
+.img-nav {
+  width: 170px;
+}
+.groupe-nav-info {
+  background-color: brown;
+  display: flex;
+  flex-direction: row;
+
+  width: 100%;
+}
+
+.player-stat {
+  background-color: chartreuse;
+  width: 30%;
+}
+.wam-planete {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.wam{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.picture-planete{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -10px;
+  margin-left: 20px;
+}
+.name{
+  margin-top: 20px;
+  color: brown;
+  font-size: 40px;
+  font-weight:bold ;
+}
+.name2{
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+.name3{
+  margin-top: 10px;
+  color: brown;
+  font-size: 40px;
+  font-weight:bold ;
+}
+.image-wam {
+  width: 170px;
+  border-radius: 80px;
+}
+.stat-wam {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.numbers-stat {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+}
+.image-stat {
+  width: 70px;
+}
+.active-stat {
+  width: 40%;
+  padding: 20px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.placement-stat{
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  font-size: 20px;
+}
+.point-stat{
+  line-height: 0.8;
+  color: white;
+  font-weight: bold;
+}
+.total-point{
+color: rgb(255, 174, 0);
+font-weight: bold;
+}
+
+.player-info {
+  background-color: aquamarine;
+  width: 65%;
+  padding: 20px;
+  margin-left: 20px;
 }
