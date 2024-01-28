@@ -68,26 +68,21 @@ header {
 }
 
 .groupe1 {
-  background-color: blueviolet;
   display: flex;
   flex-direction: column;
   width: 80%;
   padding: 20px;
 }
 
-.groupe2 {
-  width: 20%;
-}
-
 .navigation {
   display: flex;
   justify-content: flex-end;
+  margin-bottom: 15px;
 }
 .img-nav {
   width: 170px;
 }
 .groupe-nav-info {
-  background-color: brown;
   display: flex;
   flex-direction: row;
 
@@ -96,6 +91,7 @@ header {
 
 .player-stat {
   background-color: chartreuse;
+  border-radius: 15px;
   width: 30%;
 }
 .wam-planete {
@@ -104,7 +100,7 @@ header {
   justify-content: center;
   align-items: center;
 }
-.wam{
+.wam {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -112,7 +108,7 @@ header {
   margin-top: 20px;
 }
 
-.picture-planete{
+.picture-planete {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -120,21 +116,21 @@ header {
   margin-top: -10px;
   margin-left: 20px;
 }
-.name{
+.name {
   margin-top: 20px;
   color: brown;
   font-size: 40px;
-  font-weight:bold ;
+  font-weight: bold;
 }
-.name2{
+.name2 {
   color: rgb(255, 255, 255);
   font-size: 20px;
 }
-.name3{
+.name3 {
   margin-top: 10px;
   color: brown;
   font-size: 40px;
-  font-weight:bold ;
+  font-weight: bold;
 }
 .image-wam {
   width: 170px;
@@ -163,25 +159,125 @@ header {
   justify-content: center;
   align-items: center;
 }
-.placement-stat{
+.placement-stat {
   display: flex;
   flex-direction: column;
   padding-left: 10px;
   font-size: 20px;
 }
-.point-stat{
+.point-stat {
   line-height: 0.8;
   color: white;
   font-weight: bold;
 }
-.total-point{
-color: rgb(255, 174, 0);
-font-weight: bold;
+.total-point {
+  color: rgb(255, 174, 0);
+  font-weight: bold;
 }
 
 .player-info {
+  display: flex;
+  flex-direction: column;
   background-color: aquamarine;
-  width: 65%;
+  border-radius: 15px;
+  width: 70%;
   padding: 20px;
   margin-left: 20px;
+}
+
+.navigation-player {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.img-nav-player {
+  width: 200px;
+}
+.liste-info-player {
+  width: 100%;
+  height: 100%;
+  background-color: azure;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.groupe2 {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wave {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 90%;
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 18px;
+}
+.wave-txt {
+  color: brown;
+  font-size: 30px;
+  font-weight: bold;
+}
+.wave-time {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.wave-monster {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 90%;
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 18px;
+}
+
+.monster-txt {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.img-monster {
+  width: 150px;
+}
+
+.feed{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 90%;
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 18px;
+}
+
+.feed-title{
+  color: brown;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.feed-text{
+  background-color: black;
+  color: white;
+  width: 90%;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 15px;
+  padding: 10px;
+  margin-top: 18px;
 }
