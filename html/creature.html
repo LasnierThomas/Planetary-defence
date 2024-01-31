@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planetary Defense</title>
+    <link rel="shortcut icon" type="image/png" href="/images/favicon_P.ico"/>
+    <link rel="stylesheet" href="../css/creature.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <a href="accueil.html" class="back-button">Back</a>
+      <div class="countdown">
+        <p id="countdown-text">Time remaining : <span id="countdown"></span></p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="title-card">
+        <h2>Card Name</h2> <p class="name-monster">Nom de la carte</p>
+      </div>
+      <div class="img-attribut">
+        <div class="creature">
+          <img src="../images/bulldog.png" alt="Votre créature" class="blurry" />
+          <!-- Ajoutez la classe "blurry" pour flouter -->
+        </div>
+        <div class="attribut">
+          <p><strong class="color-text">Element Type</strong> Type d'élément</p>
+          <p><strong class="color-text">Race</strong> Race de l'élément</p>
+          <p><strong class="color-text">Attack</strong> Valeurs d'attaque contre les terrains</p>
+          <p><strong class="color-text">Defence</strong> Capacité potentielle de défense (future mise à jour)
+          <p><strong class="color-text">Rarity</strong> Rareté (Common, Rare, Epic, Legendary)</p>
+          <p><strong class="color-text">Card Number</strong> Numéro de carte</p>
+        </div>
+      </div>
+    </div>
+        
+    <script src="creature.js"></script>
+    <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        const isLoggedIn = localStorage.getItem('isLoggedIn');
+        const userAccount = localStorage.getItem('userAccount');
+
+        if (!isLoggedIn || isLoggedIn !== 'true') {
+            // Si l'utilisateur n'est pas connecté, redirigez-le vers la page de connexion
+            window.location.href = 'login-wax.html'; // Remplacez 'login.html' par l'URL de votre page de connexion
+        } else {
+            console.log(`Connecté avec le compte: ${userAccount}`);
+            // Ici, vous pouvez également mettre à jour l'interface utilisateur avec les informations de l'utilisateur
+        }
+    });
+</script>
+  </body>
+</html>

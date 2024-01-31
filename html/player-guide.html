@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planetary Defense</title>
+    <link rel="shortcut icon" type="image/png" href="/images/favicon_P.ico"/>
+    <link rel="stylesheet" href="../css/player-guide.css" />
+    <title>Rules</title>
+</head>
+<body>
+     <div class="header">
+      <a href="accueil.html" class="back-button">Back</a>
+       <section class="buttons">
+      <div class="wpfr">
+        <a href="https://docs.google.com/document/d/1BY09koI0VRiB2Twsh9iAD9O0qg3xtpcB5N-1J0H2HeQ/edit#heading=h.lbdyblf2gyxd"><img class="wp" src="../images/leaderboard.png" alt="logo tuto fr"/></a>
+        <a href="https://docs.google.com/document/d/1BY09koI0VRiB2Twsh9iAD9O0qg3xtpcB5N-1J0H2HeQ/edit#heading=h.iu7fvz9sfxqy"><img class="wp" src="../images/leaderboard.png" alt="logo wp fr"/></a>
+      </div>
+      <div class="wpen">
+        <a href="https://docs.google.com/document/d/1RSWN3WxiaCRoQPJTePSZHGsDvnoWyCk2psGnZne8JuU/edit#heading=h.z2wz2eo3o7f4"><img class="wp" src="../images/leaderboard.png" alt="logo tuto en"/></a>
+        <a href="https://docs.google.com/document/d/1RSWN3WxiaCRoQPJTePSZHGsDvnoWyCk2psGnZne8JuU/edit#heading=h.iu7fvz9sfxqy"><img class="wp" src="../images/leaderboard.png" alt="logo wp en"/></a>
+      </div>
+    </section>
+    <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        const isLoggedIn = localStorage.getItem('isLoggedIn');
+        const userAccount = localStorage.getItem('userAccount');
+
+        if (!isLoggedIn || isLoggedIn !== 'true') {
+            // Si l'utilisateur n'est pas connecté, redirigez-le vers la page de connexion
+            window.location.href = 'login-wax.html'; // Remplacez 'login.html' par l'URL de votre page de connexion
+        } else {
+            console.log(`Connecté avec le compte: ${userAccount}`);
+            // Ici, vous pouvez également mettre à jour l'interface utilisateur avec les informations de l'utilisateur
+        }
+    });
+</script>
+</body>
+</html>

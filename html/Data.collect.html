@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../Css/collect.css" />
+  <title>Sortable Table</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+
+    }
+
+    th,
+    td {
+      padding: 8px;
+      text-align: left;
+
+    }
+
+    th {
+      cursor: pointer;
+      border-bottom: solid 1px white;
+    }
+
+    th:hover {
+      color: #ff9c00;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="head">
+    <div class="reserch">
+      <input class="filter" type="text" id="filter-input" placeholder="Filtrer par propriétaire ou ID ou defense">
+      <button class="btn-head" id="filter-button">Filtrer</button>
+      <button class="btn-head" id="download-csv">Télécharger CSV</button>
+    </div>
+    <div class="return">
+      <a href="accueil.html" class="back-button">Back</a>
+    </div>
+  </div>
+  <div class="menu">
+    <a class="menu1" href="owners.html">Owners</a>
+    <a class="menu1" href="players.html">Players</a>
+
+  </div>
+  <table id="dataTable">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>OWNER</th>
+        <th>CREW/CREW_SLOTS</th>
+        <th>TOTAL_DEFENSE</th>
+        <th>TOTAL_DEFENSE_ARM</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Les lignes de données seront ici -->
+    </tbody>
+    <script>
+      function tableToCSV(table) {
+        const rows = table.querySelectorAll('tr');
+        const csvLines = [];
+
+        for (const row of rows) {
+          const rowData = Array.from(row.querySelectorAll('th, td')).map(cell => {
+            let cellText = cell.textContent.replace(/"/g, '""'); // Échapper les guillemets
+            return `"${cellText}"`; // Entourer chaque cellule de guillemets
+          }).join(',');
+
+          csvLines.push(rowData);
+        }
+
+        return csvLines.join('\n');
+      }
+
+      document.addEventListener('DOMContentLoaded', function () {
+        // Script de filtrage
+        document.getElementById('filter-input').addEventListener('input', function () {
+          const filterText = this.value.toLowerCase();
+          const rows = document.getElementById('dataTable').getElementsByTagName('tr');
+          for (let i = 1; i < rows.length; i++) {
+            const row = rows[i];
+            const idCell = row.cells[0] ? row.cells[0].textContent.toLowerCase() : '';
+            const ownerCell = row.cells[1] ? row.cells[1].textContent.toLowerCase() : '';
+            const defenseCell = row.cells[3] ? row.cells[3].textContent.toLowerCase() : '';
+            row.style.display = (idCell.includes(filterText) || ownerCell.includes(filterText) || defenseCell.includes(filterText)) ? '' : 'none';
+          }
+        });
+
+        document.getElementById('download-csv').addEventListener('click', function () {
+          const table = document.getElementById('dataTable');
+          const csv = tableToCSV(table);
+          const csvBlob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+
+          // Créer un lien pour le téléchargement
+          const downloadLink = document.createElement('a');
+          const url = URL.createObjectURL(csvBlob);
+          downloadLink.href = url;
+          downloadLink.download = 'table-data.csv';
+
+          // Ajouter le lien au document et déclencher le téléchargement
+          document.body.appendChild(downloadLink);
+          downloadLink.click();
+          document.body.removeChild(downloadLink);
+          URL.revokeObjectURL(url); // Libérer les ressources
+        });
+
+        // Script de tri
+        const comparer = (index, asc) => (a, b) => ((v1, v2) =>
+          v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+        )(getCellValue(asc ? a : b, index), getCellValue(asc ? b : a, index));
+        const getCellValue = (row, index) => row.cells[index].innerText || row.cells[index].textContent;
+        // Fonction pour appliquer les écouteurs d'événements de tri sur les en-têtes de tableau
+        const applySortListeners = () => {
+          document.querySelectorAll('#dataTable th').forEach(th => th.addEventListener('click', function () {
+            this.asc = !this.asc; // Alterner entre ascendant et descendant
+            const table = th.closest('table');
+            const tbody = table.querySelector('tbody');
+            Array.from(tbody.querySelectorAll('tr'))
+              .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc))
+              .forEach(tr => tbody.appendChild(tr));
+          }));
+        };
+
+        // Fetch et remplissage de la table
+        fetch('/data')
+          .then(response => response.json())
+          .then(dataObjects => {
+            const tbody = document.getElementById('dataTable').querySelector('tbody');
+            dataObjects.forEach(obj => {
+              const { id, owner, crew_number, Nombre_slots, defense } = obj;
+              const { totalDefense, totalDefenseArm } = defense;
+              const row = `<tr>
+                          <td>${id}</td>
+                          <td>${owner}</td>
+                          <td>${crew_number}/${Nombre_slots}</td>
+                          <td>${totalDefense}</td>
+                          <td>${totalDefenseArm}</td>
+                      </tr>`;
+              tbody.innerHTML += row;
+            });
+            applySortListeners(); // Appliquer les écouteurs de tri après le remplissage de la table
+          })
+          .catch(err => console.error(err));
+      });
+      window.addEventListener('DOMContentLoaded', (event) => {
+        const isLoggedIn = localStorage.getItem('isLoggedIn');
+        const userAccount = localStorage.getItem('userAccount');
+
+        if (!isLoggedIn || isLoggedIn !== 'true') {
+          // Si l'utilisateur n'est pas connecté, redirigez-le vers la page de connexion
+          window.location.href = 'login-wax.html'; // Remplacez 'login.html' par l'URL de votre page de connexion
+        } else {
+          console.log(`Connecté avec le compte: ${userAccount}`);
+          // Ici, vous pouvez également mettre à jour l'interface utilisateur avec les informations de l'utilisateur
+        }
+      });
+    </script>
+
+</body>
+
+</html>
