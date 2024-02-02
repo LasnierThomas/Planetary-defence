@@ -15,14 +15,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-}
-h1 {
-  font-size: 25px;
-  font-weight: 700;
-  background-color: rgba(0, 0, 0, 0.425);
-  border-radius: 20px;
-  padding: 10px;
+  margin-top: 36vh;
+  height: 20vh;
 }
 
 .logo {
@@ -33,15 +27,15 @@ h1 {
   margin-bottom: 20px;
 }
 .img-log {
-  width: 30vh;
+  width: 300px;
   border-radius: 20px;
   margin-top: 15px;
 }
 .img-log:hover {
-  width: 41%;
+  width: 310px;
 }
 .img-log:active {
-  width: 40%;
+  width: 300px;
 }
 
 .login {
