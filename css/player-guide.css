@@ -14,22 +14,20 @@ body {
   position: absolute;
   top: 40px; /* Ajustez la distance par rapport au haut de la page */
   left: 30px; /* Ajustez la distance par rapport à gauche de la page */
-  color: #ff9c00;
-  background-color: #333;
-  box-shadow: 3px 3px 1px;
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
 }
-.back-button:hover {
-  color: #ff9c00;
-  background-color: #300101;
-  box-shadow: 3px 3px 1px;
+.return-btn:hover {
+  width: 210px;
 }
 
-.back-button:active {
-  box-shadow: 0 0 0 #ff9c00;
+.return-btn:active {
+  width: 200px;
+}
+.return-btn{
+  width: 200px;
 }
 /* ==== body du site ====*/
 
