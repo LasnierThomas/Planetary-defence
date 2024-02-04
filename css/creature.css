@@ -1,4 +1,13 @@
 /* style.css */
+@font-face {
+    font-family: 'ethnocentricregular';
+    src: url('../font/ethnocentric_rg-webfont.woff2') format('woff2'),
+         url('../font/ethnocentric_rg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
   font-family: Arial, sans-serif;
   text-align: center;
@@ -10,6 +19,7 @@ body {
   /* background-size:; Adapter l'image pour afficher l'intégralité */
   overflow-x: hidden; /* Empêche le défilement horizontal */
   background-attachment: fixed;
+  font-family: 'ethnocentricregular' ;
 }
 
 
