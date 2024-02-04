@@ -72,10 +72,14 @@ header {
   width: 100px;
 }
 
-@media screen and (max-width: 1270px){
+@media screen and (max-width: 1572px){
   .planete{
     width: 17%;
   }
+  .groupe1{
+    width:76% !important ;
+  }
+ 
   .player-stat{
     width: 27% !important;
   }
@@ -111,7 +115,7 @@ header {
   width: 158px !important;
   }
   .groupe2{
-    width: 15% !important;
+    width: 19% !important;
   }
   .wave-txt, .feed-title{
     font-size: 20px !important;
@@ -151,11 +155,25 @@ header {
 
 .navigation {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
+  align-items: center;
   margin-bottom: 15px;
 }
 .img-nav {
   width: 170px;
+}
+.btn-navx{
+  width: 70%;
+  display: flex;
+  justify-content: flex-end;
+}
+.forge-ac{
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+.img-forge{
+  width: 80px;
 }
 .groupe-nav-info {
   display: flex;
