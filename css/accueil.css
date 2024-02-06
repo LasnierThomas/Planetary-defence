@@ -152,10 +152,19 @@ header {
   width: 80%;
   padding: 20px;
 }
-
+.forg-planet{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 13px;
+}
+.img-forge{
+  width: 120px;
+}
 .navigation {
   display: flex;
-  justify-content: space-around;
+  justify-content:flex-end;
   align-items: center;
   margin-bottom: 15px;
 }
@@ -167,14 +176,14 @@ header {
   display: flex;
   justify-content: flex-end;
 }
-.forge-ac{
+/* .forge-ac{
   width: 30%;
   display: flex;
   justify-content: center;
 }
-.img-forge{
-  width: 80px;
-}
+.img-forg{
+  width: 200px;
+} */
 .groupe-nav-info {
   display: flex;
   flex-direction: row;
@@ -206,8 +215,9 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: -7px;
-  margin-left: 20px;
+  margin-bottom: 15px;
+  /* margin-top: -7px;
+  margin-left: 20px; */
 }
 .name {
   color: brown;
