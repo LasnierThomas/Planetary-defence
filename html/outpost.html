@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planetary Defense</title>
+    <link rel="shortcut icon" type="image/png" href="./images/favicon_P.ico" />
+    <link rel="stylesheet" href="../Css/accueil.css" />
+  </head>
+  <body>
+    <header>
+      <div class="planete">
+        <a href="accueil.html"><img class="img-planete" src="../images/Magor.png" alt="planete magor" /></a>
+        <a href="accueil.html"><img class="img-planete" src="../images/Naron.png" alt="planete naron" /></a>
+        <a href="accueil.html"><img class="img-planete" src="../images/Neri.png" alt="planete neri" /></a>
+        <a href="accueil.html"><img class="img-planete" src="../images/Veles.png" alt="planete veles" /></a>
+        <a href="accueil.html"><img class="img-planete" src="../images/Eyeke.png" alt="planete eyeke" /></a>
+        <a href="accueil.html"><img class="img-planete" src="../images/Kavian.png" alt="planete kavian" /></a>
+      </div>
+      <div class="title">
+        <img class="img-title" src="../images/banniere_no_contour.png" atl="imagelogo " />
+      </div>
+      <div class="logout">
+        <a class="logout" id="logout" onclick="logout()">
+          <img class="img-logout" src="../images/logout.png" atl="bouton delog" />
+        </a>
+      </div>
+    </header>
+    <div class="full-groupe">
+      <div class="groupe1">
+        <div class="navigation">
+          <!-- <div class="forge-ac">
+            <img class="img-forge" src="../images/forge-inactive-1.png" alt="outpost" />
+          </div> -->
+          <div class="btn-navx">
+            <a href="accueil.html"><img class="img-nav" src="../images/outpost.png" alt="outpost" /></a>
+            <a href="../html/creature.html"><img class="img-nav" src="../images/creatures.png" alt="creature" /></a>
+            <a href="../html/Data.collect.html"><img class="img-nav" src="../images/leaderboard.png" alt="leaderboard" /></a>
+            <a href="../html/player-guide.html"><img class="img-nav" src="../images/player-guide.png" alt="player-guide" /></a>
+          </div>
+        </div>
+        <div class="groupe-nav-info">
+          <div class="player-stat">
+            <div class="wam-planete">
+              <div class="wam">
+                <img class="image-wam" id="avatarImage" src="../images/imagebee.png" alt="image de profil" />
+                <p class="name" id="name">Bulbi</p>
+                <p class="name2" id="wam">ipddfdf.wam</p>
+              </div>
+              <div class="forg-planet">
+                <div class="picture-planete">
+                  <img class="image-wam" src="../images/Magor.png" alt="image planete" />
+                  <p class="name3" id="name">Bulbi</p>
+                </div>
+                <div class="forge-ac">
+                  <img class="img-forge" src="../images/forge-inactive-1.png" alt="outpost" />
+                </div>
+              </div>
+            </div>
+            <div class="stat-wam">
+              <div class="numbers-stat">
+                <div class="active-stat">
+                  <img class="image-stat" id="" src="../images/Defense.png" alt="logo defense" />
+                  <div class="placement-stat">
+                    <p class="point-stat" id="name">Defence Score</p>
+                    <p class="total-point" id="name">20 000</p>
+                  </div>
+                </div>
+                <div class="active-stat">
+                  <img class="image-stat" id="" src="../images/Attack.png" alt="logo attaque" />
+                  <div class="placement-stat">
+                    <p class="point-stat" id="name">Attack Score</p>
+                    <p class="total-point" id="name">20 000</p>
+                  </div>
+                </div>
+                <div class="active-stat">
+                  <img class="image-stat" id="" src="../images/crew.png" alt="logo crew" />
+                  <div class="placement-stat">
+                    <p class="point-stat" id="name">Available Crew</p>
+                    <p class="total-point" id="name">20 000</p>
+                  </div>
+                </div>
+                <div class="active-stat">
+                  <img class="image-stat" id="" src="../images/crew_number.png" alt="logocew" />
+                  <div class="placement-stat">
+                    <p class="point-stat" id="name">Crew Number</p>
+                    <p class="total-point" id="name">20 000</p>
+                  </div>
+                </div>
+                <div class="active-stat">
+                  <img class="image-stat" id="" src="../images/defense-arm.png" alt="logo crew" />
+                  <div class="placement-stat">
+                    <p class="point-stat" id="name">Defense Arm</p>
+                    <p class="total-point" id="name">20 000</p>
+                  </div>
+                </div>
+                <div class="active-stat">
+                  <img class="image-stat" id="" src="../images/attack-arm.png" alt="logo craw" />
+                  <div class="placement-stat">
+                    <p class="point-stat" id="name">Attack Arm</p>
+                    <p class="total-point" id="name">20 000</p>
+                  </div>
+                </div>
+                <div class="active-stat">
+                  <img class="image-stat" id="" src="../images/Move.png" alt="logo move" />
+                  <div class="placement-stat">
+                    <p class="point-stat" id="name">Move Cost</p>
+                    <p class="total-point" id="name">20 000</p>
+                  </div>
+                </div>
+                <div class="active-stat">
+                  <img class="image-stat" id="" src="../images/weapons_number.png" alt="logologo crew" />
+                  <div class="placement-stat">
+                    <p class="point-stat" id="name">Weapon Number</p>
+                    <p class="total-point" id="name">20 000</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="player-info">
+            <div class="navigation-player">
+              <a href="accueil.html"><img class="img-nav-player" src="../images/forge_button.png" alt="forge" /></a>
+              <a href="accueil.html"><img class="img-nav-player" src="../images/chest_button.png" alt="chest" /></a>
+              <a href="accueil.html"><img class="img-nav-player" src="../images/boost_button.png" alt="boost" /></a>
+              <a href="accueil.html"><img class="img-nav-player" src="../images/fort_button.png" alt="fort" /></a>
+            </div>
+            <div class="liste-info-player">
+              <div class="block-x">
+                    <div class="attack-m">
+                    <div class="attack-title">
+                        <p class="title1">Attack mission</p>
+                        <p class="time-atk">19 jour 13heure 36 min 7 seconde</p>
+                    </div>
+                    <div class="img-attack-m">
+                        <img class="img-atk" src="../images/bulldog.png" alt="forge" />
+                    </div>
+                    <div class="description-crea">
+                        <p class="title-crea">bulldog des enfer qui croque</p>
+                        <p class="txt-crea">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab molestias autem dolor nulla minus quisquam odit dolore iusto, animi, deleniti dignissimos et atque, porro cum voluptas
+                        incidunt officiis possimus asperiores nam. Eveniet corrupti voluptatibus quisquam vero atque aliquam rerum necessitatibus. Quia vitae ea reprehenderit. Ducimus dolores
+                        consequuntur necessitatibus facere! Fugit similique amet architecto, ab sapiente a expedita rem voluptas necessitatibus magni sit repellendus itaque culpa eos esse veritatis?
+                        Magnam aliquam, alias illum molestiae quasi voluptatibus recusandae a similique excepturi culpa iure illo laboriosam! Laborum illo voluptate reiciendis deserunt. Voluptatibus
+                        fuga totam quam fugit nisi rerum nulla velit, quidem magni adipisci. Odio facere debitis natus eius, quaerat, unde iusto voluptate fuga nemo numquam eaque? Neque magnam ducimus
+                        tenetur veniam quaerat odio vel iste, suscipit inventore a. Nulla tempora animi nam itaque suscipit ipsam blanditiis provident! Veniam quas nemo ad, distinctio ab vel!
+                        Dignissimos, necessitatibus molestias! Esse amet non facilis ipsa unde obcaecati aspernatur consectetur sint praesentium sed vel quae culpa, illum eius quas laboriosam adipisci
+                        maxime quisquam! Odio in libero ipsa totam, non quaerat unde. Vitae illo, dicta voluptatum, ipsam quam perferendis aut perspiciatis blanditiis ducimus laudantium cum nihil fugiat
+                        vero a praesentium laboriosam nemo, deleniti fuga impedit tenetur repellat. Velit.
+                        </p>
+                    </div>
+                    <div class="attack-require">
+                        <div class="target-atk-total">
+                        <p class="target-atk">Target score</p>
+                        <p class="number-atk">100</p>
+                        </div>
+                        <div class="score-atk-total">
+                        <p class="score-atk">My attack score</p>
+                        <p class="number-score-atk">100</p>
+                        </div>
+                    </div>
+                    <div class="btn-atk">
+                        <p class="next-atk">next attck on: .....</p>
+                        <img class="img-btn-atk" src="../images/creatures.png" alt="forge" />
+                    </div>
+                    </div>
+                    <div class="defence-m">
+                        <div class="attack-title">
+                        <p class="title1">Land defense</p>
+                        <p class="time-defense">19 jour 13heure 36 min 7 seconde</p>
+                    </div>
+                    <div class="img-defense-m">
+                        <img class="img-def" src="../images/bulldog.png" alt="forge" />
+                    </div>
+                    <div class="description-crea">
+                        <p class="title-crea">bulldog des enfer qui croque</p>
+                        <p class="txt-crea">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab molestias autem dolor nulla minus quisquam odit dolore iusto, animi, deleniti dignissimos et atque, porro cum voluptas
+                        incidunt officiis possimus asperiores nam. Eveniet corrupti voluptatibus quisquam vero atque aliquam rerum necessitatibus. Quia vitae ea reprehenderit. Ducimus dolores
+                        consequuntur necessitatibus facere! Fugit similique amet architecto, ab sapiente a expedita rem voluptas necessitatibus magni sit repellendus itaque culpa eos esse veritatis?
+                        Magnam aliquam, alias illum molestiae quasi voluptatibus recusandae a similique excepturi culpa iure illo laboriosam! Laborum illo voluptate reiciendis deserunt. Voluptatibus
+                        fuga totam quam fugit nisi rerum nulla velit, quidem magni adipisci. Odio facere debitis natus eius, quaerat, unde iusto voluptate fuga nemo numquam eaque? Neque magnam ducimus
+                        tenetur veniam quaerat odio vel iste, suscipit inventore a. Nulla tempora animi nam itaque suscipit ipsam blanditiis provident! Veniam quas nemo ad, distinctio ab vel!
+                        Dignissimos, necessitatibus molestias! Esse amet non facilis ipsa unde obcaecati aspernatur consectetur sint praesentium sed vel quae culpa, illum eius quas laboriosam adipisci
+                        maxime quisquam! Odio in libero ipsa totam, non quaerat unde. Vitae illo, dicta voluptatum, ipsam quam perferendis aut perspiciatis blanditiis ducimus laudantium cum nihil fugiat
+                        vero a praesentium laboriosam nemo, deleniti fuga impedit tenetur repellat. Velit.
+                        </p>
+                    </div>
+                    <div class="warlord">
+                        <p class="txt-warlord">Choose your Warlord</p>
+                        <input class="filter" type="text" id="filter-input" placeholder="Warlord wam">
+                    </div>
+                    <div class="defense-require">
+                        <div class="target-def-total">
+                        <p class="target-def">Target score</p>
+                        <p class="number-def">100</p>
+                        </div>
+                        <div class="score-def-total">
+                        <p class="score-def">My defense score</p>
+                        <p class="number-score-def">100</p>
+                        </div>
+                    </div>
+                    <div class="btn-atk">
+                        <img class="img-btn-atk" src="../images/creatures.png" alt="forge" />
+                    </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="groupe2">
+        <div class="wave">
+          <p class="wave-txt" id="countdown-text">Next Wave</p>
+          <span class="wave-time" id="countdown">10:00:00</span>
+        </div>
+        <div class="wave-monster">
+          <p class="monster-txt">Next Monster</p>
+          <img class="img-monster" id="" src="../images/bulldog.png" alt="image monstre" />
+        </div>
+        <div class="feed">
+          <p class="feed-title">New Feed</p>
+        </div>
+        <div class="feed-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora recusandae natus at alias quas dolores! Totam aliquam nemo voluptatibus est explicabo! Atque dolor et iusto illo fuga magnam
+          error quod hic accusamus veniam quas id natus consequatur deleniti eveniet, impedit nemo quisquam odio voluptatem libero officia eum molestiae? Adipisci totam quod hic consectetur tempore
+          error, facilis odio, ad earum doloremque nulla eos suscipit exercitationem ea! Dolorem ipsam ratione, veritatis corrupti ex tenetur non in laudantium et, similique perferendis dolore aut.
+          Facilis assumenda aliquam vel odio nisi qui animi tempora et nesciunt voluptatum nulla praesentium fuga temporibus sit doloremque, dignissimos reprehenderit corrupti voluptates quaerat.
+          Placeat voluptatem voluptatibus autem asperiores atque labore magnam consequatur repellendus, unde odio quasi adipisci, praesentium est obcaecati deleniti beatae cumque doloremque iste. Et
+          eum omnis deleniti dolore voluptas. Assumenda quo dolorem aliquam facilis illum id repudiandae, quasi ipsam. Repellendus vero id, natus velit voluptate quod vitae doloremque repellat, quasi,
+          minus excepturi porro necessitatibus quaerat veniam quae molestiae ullam? Optio, rem. Quidem eos et molestiae, dolores saepe eum hic quae doloribus ea cumque unde atque fugit facilis ipsam
+          velit. Quidem repellendus rem repudiandae, veniam voluptatem ea, vero hic vitae harum commodi blanditiis sapiente earum est, nobis laborum vel.
+        </div>
+
+        <img class="img-event" id="" src="../images/lavalux.png" alt="image monstre" />
+      </div>
+    </div>
+    <script src="../js/creature.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
+
+<!-- <div class="block-x">
+                    <div class="attack-m">
+                    <div class="attack-title">
+                        <p class="title1">Attack mission</p>
+                        <p class="time">19 jour 13heure 36 min 7 seconde</p>
+                    </div>
+                    <div class="img-attack-m">
+                        <img class="img-atk" src="../images/bulldog.png" alt="forge" />
+                    </div>
+                    <div class="description-crea">
+                        <p class="title-crea">bulldog des enfer qui croque</p>
+                        <p class="txt-crea">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab molestias autem dolor nulla minus quisquam odit dolore iusto, animi, deleniti dignissimos et atque, porro cum voluptas
+                        incidunt officiis possimus asperiores nam. Eveniet corrupti voluptatibus quisquam vero atque aliquam rerum necessitatibus. Quia vitae ea reprehenderit. Ducimus dolores
+                        consequuntur necessitatibus facere! Fugit similique amet architecto, ab sapiente a expedita rem voluptas necessitatibus magni sit repellendus itaque culpa eos esse veritatis?
+                        Magnam aliquam, alias illum molestiae quasi voluptatibus recusandae a similique excepturi culpa iure illo laboriosam! Laborum illo voluptate reiciendis deserunt. Voluptatibus
+                        fuga totam quam fugit nisi rerum nulla velit, quidem magni adipisci. Odio facere debitis natus eius, quaerat, unde iusto voluptate fuga nemo numquam eaque? Neque magnam ducimus
+                        tenetur veniam quaerat odio vel iste, suscipit inventore a. Nulla tempora animi nam itaque suscipit ipsam blanditiis provident! Veniam quas nemo ad, distinctio ab vel!
+                        Dignissimos, necessitatibus molestias! Esse amet non facilis ipsa unde obcaecati aspernatur consectetur sint praesentium sed vel quae culpa, illum eius quas laboriosam adipisci
+                        maxime quisquam! Odio in libero ipsa totam, non quaerat unde. Vitae illo, dicta voluptatum, ipsam quam perferendis aut perspiciatis blanditiis ducimus laudantium cum nihil fugiat
+                        vero a praesentium laboriosam nemo, deleniti fuga impedit tenetur repellat. Velit.
+                        </p>
+                    </div>
+                    <div class="attack-require">
+                        <div class="target-atk-total">
+                        <p class="target-atk">Target score</p>
+                        <p class="number-atk">100</p>
+                        </div>
+                        <div class="score-atk-total">
+                        <p class="score-atk">My attack score</p>
+                        <p class="number-score-atk">100</p>
+                        </div>
+                    </div>
+                    <div class="btn-atk">
+                        <p class="next-atk">next attck on: .....</p>
+                        <img class="img-btn-atk" src="../images/creatures.png" alt="forge" />
+                    </div>
+                    </div>
+                    <div class="defence-m">
+                        
+                    </div>
+                </div> -->
