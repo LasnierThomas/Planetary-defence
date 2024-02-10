@@ -373,6 +373,9 @@ header {
 }
 
 .txt-crea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: white;
   font-family: 'latoregular';
   background-color: rgba(0, 0, 0, 0.623);
@@ -388,6 +391,13 @@ header {
   scrollbar-color: black white;
   scrollbar-width: thin;
   line-height: 1;
+}
+.btn-more{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  width: 100px;
+
 }
 
 .warlord{
@@ -516,6 +526,19 @@ padding-bottom: 10px;
 
 .number-score-def {
   margin-left: 17px;
+}
+
+/* ==== creature ====*/
+
+.all-cadre{
+  background-color: aqua;
+  height: 100%;
+  padding-left: 55px;
+  padding-top: 50px;
+}
+.img-nav-creature{
+  width: 200px;
+  margin-top: 10px;
 }
 
 @media screen and (max-width: 1572px) {
