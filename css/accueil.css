@@ -4,6 +4,12 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "latoregular";
+  src: url("../font/lato-regular-webfont.woff2") format("woff2"), url("../font/lato-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   margin: 0;
   padding: 0;
@@ -68,69 +74,7 @@ header {
   width: 100px;
 }
 
-@media screen and (max-width: 1572px) {
-  .planete {
-    width: 17%;
-  }
-  .groupe1 {
-    width: 76% !important ;
-  }
 
-  .player-stat {
-    width: 27% !important;
-  }
-  .numbers-stat {
-    width: 87% !important;
-    justify-content: center;
-  }
-  .wam {
-    width: 113px;
-  }
-  .image-wam {
-    width: 110px !important;
-  }
-  .name,
-  .name3 {
-    font-size: 18px !important;
-  }
-  .name2 {
-    font-size: 15px !important;
-  }
-  .image-stat {
-    width: 53px !important;
-  }
-  .active-stat {
-    width: 25% !important;
-  }
-  .point-stat,
-  .total-point {
-    font-size: 14px !important;
-  }
-  .total-point {
-    font-size: 11px;
-  }
-  .img-nav-player,
-  .img-nav {
-    width: 158px !important;
-  }
-  .groupe2 {
-    width: 19% !important;
-  }
-  .wave-txt,
-  .feed-title {
-    font-size: 20px !important;
-  }
-  .wave-time {
-    font-size: 9px !important;
-  }
-  .monster-txt {
-    font-size: 14px !important;
-  }
-  .feed-text {
-    font-size: 11px !important;
-    height: 578px !important;
-  }
-}
 
 /* ==== corps =====*/
 
@@ -241,7 +185,7 @@ header {
   width: 100%;
 }
 .image-stat {
-  width: 70px;
+  width: 60px;
 }
 .active-stat {
   width: 30%;
@@ -253,7 +197,7 @@ header {
 }
 .placement-stat {
   padding-left: 10px;
-  font-size: 20px;
+  font-size: 18px;
 }
 .point-stat {
   line-height: 1;
@@ -262,6 +206,8 @@ header {
 }
 .total-point {
   color: rgb(255, 174, 0);
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
 }
 
 .player-info {
@@ -361,9 +307,10 @@ header {
 
 .feed-text {
   background-color: rgba(0, 0, 0, 0.493);
+  font-family: 'latoregular';
   color: white;
   width: 90%;
-  height: 250px;
+  height: 380px;
   font-size: 15px;
   border-radius: 15px;
   padding: 10px;
@@ -412,7 +359,7 @@ header {
 .img-atk {
   display: flex;
   justify-content: center;
-  width: 200px;
+  width: 333px;
 }
 
 .description-crea {
@@ -427,8 +374,10 @@ header {
 
 .txt-crea {
   color: white;
+  font-family: 'latoregular';
+  background-color: rgba(0, 0, 0, 0.623);
   width: 90%;
-  height: 100px;
+  height: 250px;
   font-size: 15px;
   border-radius: 15px;
   padding: 10px;
@@ -436,6 +385,8 @@ header {
   overflow: hidden;
   overflow-y: hidden;
   overflow-y: scroll;
+  scrollbar-color: black white;
+  scrollbar-width: thin;
   line-height: 1;
 }
 
@@ -523,7 +474,7 @@ padding-bottom: 10px;
 .img-def {
   display: flex;
   justify-content: center;
-  width: 200px;
+  width: 333px;
 }
 
 .defense-require {
@@ -565,4 +516,68 @@ padding-bottom: 10px;
 
 .number-score-def {
   margin-left: 17px;
+}
+
+@media screen and (max-width: 1572px) {
+  .planete {
+    width: 17%;
+  }
+  .groupe1 {
+    width: 76% !important ;
+  }
+
+  .player-stat {
+    width: 27% !important;
+  }
+  .numbers-stat {
+    width: 87% !important;
+    justify-content: center;
+  }
+  .wam {
+    width: 113px;
+  }
+  .image-wam {
+    width: 110px !important;
+  }
+  .name,
+  .name3 {
+    font-size: 18px !important;
+  }
+  .name2 {
+    font-size: 15px !important;
+  }
+  .image-stat {
+    width: 53px !important;
+  }
+  .active-stat {
+    width: 25% !important;
+  }
+  .point-stat,
+  .total-point {
+    font-size: 14px !important;
+  }
+  .total-point {
+    font-size: 11px;
+  }
+  .img-nav-player,
+  .img-nav {
+    width: 158px !important;
+  }
+  .groupe2 {
+    width: 19% !important;
+  }
+  .wave-txt,
+  .feed-title {
+    font-size: 20px !important;
+  }
+  .wave-time {
+    font-size: 9px !important;
+  }
+  .monster-txt {
+    font-size: 14px !important;
+  }
+  .feed-text {
+    font-size: 11px !important;
+    height: 260px !important;
+  }
 }
