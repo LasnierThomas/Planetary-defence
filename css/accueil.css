@@ -370,6 +370,7 @@ header {
 }
 .title-crea {
   font-size: 14px;
+  margin-top: 20px;
 }
 
 .txt-crea {
@@ -427,6 +428,9 @@ header {
 .target-atk {
   display: flex;
   align-items: center;
+    font-size: 17px;
+  font-family:"latoregular";
+  font-weight: bold;
   height: 18px;
   background-color: rgb(207, 30, 30);
   padding: 5px;
@@ -441,6 +445,9 @@ header {
 .score-atk {
   display: flex;
   align-items: center;
+    font-size: 17px;
+  font-family:"latoregular";
+  font-weight: bold;
   height: 18px;
   background-color: rgb(241, 110, 110);
   padding: 5px;
@@ -508,6 +515,9 @@ padding-bottom: 10px;
 .target-def {
   display: flex;
   align-items: center;
+    font-size: 17px;
+  font-family:"latoregular";
+  font-weight: bold;
   height: 18px;
   background-color: rgb(207, 30, 30);
   padding: 5px;
@@ -522,6 +532,9 @@ padding-bottom: 10px;
 .score-def {
   display: flex;
   align-items: center;
+    font-size: 17px;
+  font-family:"latoregular";
+  font-weight: bold;
   height: 18px;
   background-color: rgb(241, 110, 110);
   padding: 5px;
@@ -538,6 +551,9 @@ padding-bottom: 10px;
   font-family: 'Times New Roman', Times, serif;
   font-weight: bold;
   font-size: 15px;
+}
+.next-atk{
+  margin-top: 20px;
 }
 
 /* ==== creature ====*/
@@ -613,7 +629,7 @@ padding-bottom: 10px;
     font-size: 14px !important;
   }
   .feed-text {
-    font-size: 11px !important;
+    font-size: 14px !important;
     
   }
   .defence-m{
@@ -624,6 +640,49 @@ padding-bottom: 10px;
     width: 178px;
   }
 }
+
+@media (min-width: 1236px) and (max-width: 1345px){
+  .img-nav {
+    width: 118px !important;
+  }
+  .img-nav-player{
+    width: 140px !important;
+  }
+  .image-wam{
+    width: 90px !important;
+  }
+  .name, .name3 {
+    font-size: 16px !important;
+  }
+  .attack-m, .defence-m{
+    width: 35vh !important;
+  }
+  .title1 {
+    font-size: 23px;
+  }
+  .img-atk, .img-def{
+    width: 282px;
+  }
+  .title-crea {
+    font-size: 11px;
+}
+.txt-warlord{
+  margin-top: 25px !important;
+}
+.img-btn-atk, .img-btn-def{
+  margin-top: 20px;
+}
+.next-atk{
+  margin-top: 26px !important;
+}
+.liste-info-player{
+  width: 94% !important;
+}
+.all-cadre{
+  padding-left: 20px;
+}
+}
+
 @media screen and (max-width: 1235px) {
 
   .img-planete{
@@ -682,5 +741,6 @@ padding-bottom: 10px;
 .img-nav-creature{
   width: 142px;
 }
+
 
 }
