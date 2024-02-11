@@ -580,21 +580,24 @@ padding-bottom: 10px;
     font-size: 15px !important;
   }
   .image-stat {
-    width: 53px !important;
+    width: 37px !important;
   }
   .active-stat {
     width: 25% !important;
   }
   .point-stat,
   .total-point {
-    font-size: 14px !important;
+    font-size: 11px !important;
   }
   .total-point {
     font-size: 11px;
   }
   .img-nav-player,
   .img-nav {
-    width: 158px !important;
+    width: 128px !important;
+  }
+  .groupe-nav-info{
+    height: 100% !important;
   }
   .groupe2 {
     width: 19% !important;
@@ -611,6 +614,73 @@ padding-bottom: 10px;
   }
   .feed-text {
     font-size: 11px !important;
-    height: 260px !important;
+    
   }
+  .defence-m{
+    margin-left: 10px;
+  }
+
+  .img-nav-creature{
+    width: 178px;
+  }
+}
+@media screen and (max-width: 1235px) {
+
+  .img-planete{
+    width: 79px;
+  }
+  .groupe2{
+    padding-left: 10px;
+  }
+  .img-title{
+    width: 605px;
+  }
+  .img-nav{
+    width: 105px !important;
+  }
+  .image-wam{
+    width: 80px !important;
+  }
+ .name, .name3, .name2{
+  font-size: 13px !important;
+ }
+ .forg-planet{
+  margin-left: 0px !important;
+ }
+.liste-info-player{
+  width: 93%;
+}
+.attack-m, .defence-m{
+  width: 28vh;
+}
+.title1{
+  font-size: 20px;
+}
+.img-atk, .img-def{
+  width: 232px;
+}
+.title-crea{
+  font-size: 9px;
+}
+
+.target-atk, .target-def, .score-atk, .score-def{
+  font-size: 17px;
+  font-family:"latoregular";
+  font-weight: bold;
+}
+.txt-warlord{
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.img-btn-atk{
+  margin-top:20px;
+}
+.all-cadre{
+  padding-left: 32px;
+}
+.img-nav-creature{
+  width: 142px;
+}
+
 }
