@@ -434,6 +434,9 @@ header {
 }
 .number-atk {
   margin-left: 50px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 15px;
 }
 .score-atk {
   display: flex;
@@ -451,6 +454,9 @@ header {
 
 .number-score-atk {
   margin-left: 17px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 15px;
 }
 
 .btn-atk {
@@ -509,6 +515,9 @@ padding-bottom: 10px;
 }
 .number-def {
   margin-left: 60px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 15px;
 }
 .score-def {
   display: flex;
@@ -526,6 +535,9 @@ padding-bottom: 10px;
 
 .number-score-def {
   margin-left: 17px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 15px;
 }
 
 /* ==== creature ====*/
