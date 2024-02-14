@@ -744,3 +744,86 @@ padding-bottom: 10px;
 
 
 }
+
+@media (min-width: 390px) and (max-width: 1075px){
+
+header{
+  width: 100% !important;
+  flex-direction: column-reverse !important;
+  align-items: center !important;
+  margin-left: 0px;
+  box-sizing: border-box !important;
+}
+.planete{
+  padding-top: 20px !important;
+  flex-wrap: nowrap !important;
+  padding-left: 0px !important;
+  width: 100% !important;
+}
+.img-planete{
+  width: 59px !important;
+}
+.img-title{
+  width: 245px !important;
+}
+.title{
+  padding-top: 20px !important;
+}
+.logout{
+  width: 0px !important;
+  justify-content: center;
+}
+
+.navigation{
+  display: none;
+}
+
+.full-groupe{
+  flex-direction: column;
+}
+
+.groupe-nav-info{
+  flex-direction: column;
+}
+.player-stat{
+  width: 119% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.active-stat{
+  flex-direction: column;
+  width: 5% !important;
+}
+.point-stat{
+  font-size: 9px !important;
+}
+.placement-stat{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.total-point{
+  font-size: 13px !important;
+}
+
+.player-info{
+  margin-left: 0px;
+  width: 106%;
+  margin-top: 19px;
+}
+
+.liste-info-player{
+  width: 92%;
+  padding: 15px;
+}
+
+.groupe2{
+  width: 92% !important;
+  padding-left: 17px !important;
+}
+.wave{
+  margin-top: 0px !important;
+}
+}
