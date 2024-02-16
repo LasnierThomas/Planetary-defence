@@ -10,12 +10,12 @@
   <body>
     <header>
       <div class="planete">
-        <a href="accueil.html"><img class="img-planete" src="../images/Magor.png" alt="planete magor" /></a>
-        <a href="accueil.html"><img class="img-planete" src="../images/Naron.png" alt="planete naron" /></a>
-        <a href="accueil.html"><img class="img-planete" src="../images/Neri.png" alt="planete neri" /></a>
-        <a href="accueil.html"><img class="img-planete" src="../images/Veles.png" alt="planete veles" /></a>
-        <a href="accueil.html"><img class="img-planete" src="../images/Eyeke.png" alt="planete eyeke" /></a>
-        <a href="accueil.html"><img class="img-planete" src="../images/Kavian.png" alt="planete kavian" /></a>
+<a href="accueil.html"><img class="img-planete" src="../images/Magor.png" alt="planete magor" /></a>
+        <a href="naron.html"><img class="img-planete" src="../images/Naron.png" alt="planete naron" /></a>
+        <a href="neri.html"><img class="img-planete" src="../images/Neri.png" alt="planete neri" /></a>
+        <a href="veles.html"><img class="img-planete" src="../images/Veles.png" alt="planete veles" /></a>
+        <a href="eyeke.html"><img class="img-planete" src="../images/Eyeke.png" alt="planete eyeke" /></a>
+        <a href="kavian.html"><img class="img-planete" src="../images/Kavian.png" alt="planete kavian" /></a>
       </div>
       <div class="title">
         <img class="img-title" src="../images/banniere_no_contour.png" atl="imagelogo " />
@@ -30,6 +30,7 @@
       <div class="groupe1">
         <div class="navigation">
           <div class="btn-navx">
+            <a href="../html/accueil.html"><img class="img-nav" src="../images/boost_button.png" alt="acceuil" /></a>
             <a href="../html/mission.html"><img class="img-nav" src="../images/missions_button.png" alt="mission" /></a>
             <a href="../html/outpost.html"><img class="img-nav" src="../images/outpost.png" alt="outpost" /></a>
             <a href="../html/library.html"><img class="img-nav" src="../images/library_button.png" alt="library" /></a>
@@ -37,6 +38,7 @@
             <a href="../html/player-guide.html"><img class="img-nav" src="../images/player-guide.png" alt="player-guide" /></a>
           </div>
         </div>
+        <img class="menu-burger" src="../images/bouton-hamburger.png">
         <div class="groupe-nav-info">
           <div class="player-stat">
             <div class="wam-planete">
@@ -130,10 +132,10 @@
                         <p class="time-atk" id="time_end">19 jour 13heure 36 min 7 seconde</p>
                     </div>
                     <div class="img-attack-m">
-                        <img class="img-atk" src="../images/RedBoar-ad.jpg" alt="forge" />
+                        <img class="img-atk" src="../images/Ma-boar.webp" alt="forge" />
                     </div>
                     <div class="description-crea">
-                        <p class="title-crea" id="missiontitle">bulldog des enfer qui croque</p>
+                        <p class="title-crea" id="missiontitle">Ma-boar</p>
                         <p class="txt-crea">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab molestias autem dolor nulla minus quisquam odit dolore iusto, animi, deleniti dignissimos et atque, porro cum voluptas
                         incidunt officiis possimus asperiores nam. Eveniet corrupti voluptatibus quisquam vero atque aliquam rerum necessitatibus. Quia vitae ea reprehenderit. Ducimus dolores
@@ -169,10 +171,10 @@
                         <p class="time-defense">19 jour 13heure 36 min 7 seconde</p>
                     </div>
                     <div class="img-defense-m">
-                        <img class="img-def" src="../images/RedBoar-ad.jpg" alt="forge" />
+                        <img class="img-def" src="../images/Ma-boar.webp" alt="forge" />
                     </div>
                     <div class="description-crea">
-                        <p class="title-crea">bulldog des enfer qui croque</p>
+                        <p class="title-crea">Ma-boar</p>
                         <p class="txt-crea">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab molestias autem dolor nulla minus quisquam odit dolore iusto, animi, deleniti dignissimos et atque, porro cum voluptas
                         incidunt officiis possimus asperiores nam. Eveniet corrupti voluptatibus quisquam vero atque aliquam rerum necessitatibus. Quia vitae ea reprehenderit. Ducimus dolores
@@ -209,14 +211,14 @@
           </div>
         </div>
       </div>
-      <div class="groupe2">
+      <div class="groupe2-x">
         <div class="wave">
           <p class="wave-txt" id="countdown-text">Next Wave</p>
           <span class="wave-time" id="countdown">10:00:00</span>
         </div>
         <div class="wave-monster">
           <p class="monster-txt">Next Monster</p>
-          <img class="img-monster" id="" src="../images/bulldog.png" alt="image monstre" />
+          <img class="img-monster" id="" src="../images/Magorite_berzerk_square.jpg" alt="image monstre" />
         </div>
         <div class="feed">
           <p class="feed-title">New Feed</p>
@@ -235,6 +237,15 @@
         <img class="img-event" id="" src="../images/lavalux.png" alt="image monstre" />
       </div>
     </div>
+     <script>
+        
+        const menuburger = document.querySelector(".menu-burger")
+        const navigation = document.querySelector(".navigation")
+ 
+        menuburger.addEventListener('click',()=>{
+        navigation.classList.toggle('mobile-menu')
+        })
+    </script>
     <script src="../js/creature.js"></script>
     <script src="../js/main.js"></script>
   </body>

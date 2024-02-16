@@ -10,13 +10,12 @@
   <body>
     <header>
       <div class="planete">
-        <a href="accueil.html"><img class="img-planete" src="../images/Magor.png" alt="planete magor" /></a>
-        <a href="accueil.html"><img class="img-planete" src="../images/Naron.png" alt="planete naron" /></a>
-        <a href="accueil.html"><img class="img-planete" src="../images/Neri.png" alt="planete neri" /></a>
-        <a href="accueil.html"><img class="img-planete" src="../images/Veles.png" alt="planete veles" /></a>
-        <a href="accueil.html"><img class="img-planete" src="../images/Eyeke.png" alt="planete eyeke" /></a>
-        <a href="accueil.html"><img class="img-planete" src="../images/Kavian.png" alt="planete kavian" /></a>
-      </div>
+       <a href="accueil.html"><img class="img-planete" src="../images/Magor.png" alt="planete magor" /></a>
+        <a href="naron.html"><img class="img-planete" src="../images/Naron.png" alt="planete naron" /></a>
+        <a href="neri.html"><img class="img-planete" src="../images/Neri.png" alt="planete neri" /></a>
+        <a href="veles.html"><img class="img-planete" src="../images/Veles.png" alt="planete veles" /></a>
+        <a href="eyeke.html"><img class="img-planete" src="../images/Eyeke.png" alt="planete eyeke" /></a>
+        <a href="kavian.html"><img class="img-planete" src="../images/Kavian.png" alt="planete kavian" /></a>
       <div class="title">
         <img class="img-title" src="../images/banniere_no_contour.png" atl="imagelogo " />
       </div>
@@ -30,6 +29,7 @@
       <div class="groupe1">
         <div class="navigation"> 
           <div class="btn-navx">
+            <a href="../html/accueil.html"><img class="img-nav" src="../images/boost_button.png" alt="acceuil" /></a>
             <a href="../html/mission.html"><img class="img-nav" src="../images/missions_button.png" alt="outpost" /></a>
             <a href="../html/outpost.html"><img class="img-nav" src="../images/outpost.png" alt="outpost" /></a>
             <a href="../html/library.html"><img class="img-nav" src="../images/library_button.png" alt="library" /></a>
@@ -37,6 +37,7 @@
             <a href="../html/player-guide.html"><img class="img-nav" src="../images/player-guide.png" alt="player-guide" /></a>
           </div>
         </div>
+        <img class="menu-burger" src="../images/bouton-hamburger.png">
         <div class="groupe-nav-info">
           <div class="player-stat">
             <div class="wam-planete">
@@ -124,8 +125,8 @@
             </div>
             <div class="liste-info-player">
                 <div class="all-cadre">
-                  <a href="creature1.html"><img class="img-nav-creature" src="../images/bulldog.png" alt="crea 1" /></a>
-                  <a href="creature1.html"><img class="img-nav-creature" src="../images/coming_soon_2.jpg" alt="crea 1" /></a>
+                  <a href="creature1.html"><img class="img-nav-creature" src="../images/Ma-boar_square.jpg" alt="crea 1" /></a>
+                  <a href="creature1.html"><img class="img-nav-creature" src="../images/Magorite_berzerk_square.jpg" alt="crea 1" /></a>
                   <a href="creature1.html"><img class="img-nav-creature" src="../images/coming_soon_2.jpg" alt="crea 1" /></a>
                   <a href="creature1.html"><img class="img-nav-creature" src="../images/coming_soon_2.jpg" alt="crea 1" /></a>
                   <a href="creature1.html"><img class="img-nav-creature" src="../images/coming_soon_2.jpg" alt="crea 1" /></a>
@@ -137,14 +138,14 @@
           </div>
         </div>
       </div>
-      <div class="groupe2">
+      <div class="groupe2-x">
         <div class="wave">
           <p class="wave-txt" id="countdown-text">Next Wave</p>
           <span class="wave-time" id="countdown">10:00:00</span>
         </div>
         <div class="wave-monster">
           <p class="monster-txt">Next Monster</p>
-          <img class="img-monster" id="" src="../images/bulldog.png" alt="image monstre" />
+          <img class="img-monster" id="" src="../images/Magorite_berzerk_square.jpg" alt="image monstre" />
         </div>
         <div class="feed">
           <p class="feed-title">New Feed</p>
@@ -163,6 +164,15 @@
         <img class="img-event" id="" src="../images/lavalux.png" alt="image monstre" />
       </div>
     </div>
+     <script>
+        
+        const menuburger = document.querySelector(".menu-burger")
+        const navigation = document.querySelector(".navigation")
+ 
+        menuburger.addEventListener('click',()=>{
+        navigation.classList.toggle('mobile-menu')
+        })
+    </script>
     <script src="../js/creature.js"></script>
     <script src="../js/main.js"></script>
   </body>

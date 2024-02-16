@@ -1,0 +1,107 @@
+   @font-face {
+  font-family: "ethnocentricregular";
+  src: url("../font/ethnocentric_rg-webfont.woff2") format("woff2"), url("../font/ethnocentric_rg-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+   
+ 
+
+   .return-btn{
+    width: 250px;
+   }
+.block-progress{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: -50px;
+}
+   .progress{    
+    position: relative;
+    width: 410px;
+    height: 40px;
+    background: whitesmoke;
+    border-radius: 10px;
+    overflow: hidden;
+   }
+   .progress__fill{
+    width: 0%;
+    height: 100%;
+    background-color: green;
+    transition: all 0.2s;
+   }
+   .progress__text{
+    position: absolute;
+    top:10px;
+    right: 10px;
+    color: black;
+   }
+
+   .donation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    margin-left: 8%;
+    background-color: rgba(0, 0, 0, 0.589);
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+}
+    .txt-donation{
+        font-size: 25px;
+        color: white;
+    }
+    .img-nav{
+        width: 500px;
+    }
+    .img-nav:hover{
+        width: 503px;
+    }
+    .img-nav:active{
+        width: 500px;
+    }
+
+    .amount{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .txt-amount{
+        font-size: 20px;
+        color: white;
+    }
+
+    .progress__TLM{
+        margin-top: 20px;
+        font-size: 20px;
+
+    }
+
+    .filter{
+        width: 200px;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+
+    @media (min-width: 390px) and (max-width: 1075px){
+        .img-nav{
+        width: 300px;
+    }
+    .img-nav:hover{
+        width: 503px;
+    }
+    .img-nav:active{
+        width: 500px;
+    }
+    .block-progress{
+        margin-bottom: -120px;
+    }
+
+    }

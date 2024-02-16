@@ -22,6 +22,16 @@ body {
   font-family: "ethnocentricregular";
 }
 
+.menu-burger{
+  display: none;
+  width: 35px;
+  position: absolute;
+  top: 15px;
+  right: 30px;
+}
+
+
+
 /* ===== header  =====*/
 header {
   width: 96%;
@@ -81,6 +91,7 @@ header {
 .full-groupe {
   display: flex;
   flex-direction: row;
+  align-items: center;
   width: 100%;
   color: black;
   height: 100%;
@@ -244,6 +255,15 @@ header {
   flex-direction: column;
   align-items: center;
 }
+.groupe2-x{
+
+  width: 20%;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
 
 .wave {
   display: flex;
@@ -369,7 +389,7 @@ header {
   height: 38%;
 }
 .title-crea {
-  font-size: 14px;
+  font-size: 20px;
   margin-top: 20px;
 }
 
@@ -559,12 +579,17 @@ padding-bottom: 10px;
 /* ==== creature ====*/
 
 .all-cadre{
-  height: 100%;
-  padding-left: 55px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+  
 }
 .img-nav-creature{
   width: 200px;
   margin-top: 10px;
+  padding: 10px;
 }
 
 @media screen and (max-width: 1572px) {
@@ -616,7 +641,10 @@ padding-bottom: 10px;
     height: 100% !important;
   }
   .groupe2 {
-    width: 19% !important;
+    width: 17% !important;
+    margin-top: 0 !important;
+    
+    
   }
   .wave-txt,
   .feed-title {
@@ -681,6 +709,10 @@ padding-bottom: 10px;
 .all-cadre{
   padding-left: 20px;
 }
+
+.groupe2{
+  margin-top: -189px !important;
+}
 }
 
 @media screen and (max-width: 1235px) {
@@ -690,6 +722,9 @@ padding-bottom: 10px;
   }
   .groupe2{
     padding-left: 10px;
+    .groupe2{
+  margin-top: -189px !important;
+}
   }
   .img-title{
     width: 605px;
@@ -719,7 +754,7 @@ padding-bottom: 10px;
   width: 232px;
 }
 .title-crea{
-  font-size: 9px;
+  font-size: 14px;
 }
 
 .target-atk, .target-def, .score-atk, .score-def{
@@ -754,7 +789,17 @@ header{
   margin-left: 0px;
   box-sizing: border-box !important;
 }
+
+.menu-burger{
+  display: block;
+  width: 35px;
+  position: absolute;
+  top: 15px;
+  right: 30px;
+}
 .planete{
+  display: flex;
+  justify-content: center;
   padding-top: 20px !important;
   flex-wrap: nowrap !important;
   padding-left: 0px !important;
@@ -774,8 +819,28 @@ header{
   justify-content: center;
 }
 
+.navigation.mobile-menu{
+  margin-left: 0;
+}
+
 .navigation{
-  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.377);
+  backdrop-filter: blur(3px);
+  justify-content: center;
+  margin-left: -100%;
+  width: 100%;
+  height: 100vh;
+}
+.btn-navx{
+  flex-direction: column;
+  align-items: center;
+}
+.img-nav{
+  margin: 25px 0;
+  width: 170px !important;
 }
 
 .full-groupe{
@@ -784,17 +849,23 @@ header{
 
 .groupe-nav-info{
   flex-direction: column;
+  align-items: center;
 }
 .player-stat{
-  width: 119% !important;
+  width: 100% !important;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
 
+.numbers-stat{
+  width: 100% !important;
 }
 .active-stat{
   flex-direction: column;
   width: 5% !important;
+  margin-left: 0;
+  padding: 10px 32px;
 }
 .point-stat{
   font-size: 9px !important;
@@ -810,7 +881,7 @@ header{
 
 .player-info{
   margin-left: 0px;
-  width: 106%;
+  width: 95% !important;
   margin-top: 19px;
 }
 
@@ -818,10 +889,31 @@ header{
   width: 92%;
   padding: 15px;
 }
+.block-x{
+  flex-direction: column;
+  align-items: center;
+}
+.attack-m, .defence-m{
+  width: 100%;
+}
+
+.all-cadre{
+  padding-left: 0 !important;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
 
 .groupe2{
   width: 92% !important;
   padding-left: 17px !important;
+  margin-top: 0;
+}
+.groupe2-x{
+  display: none;
 }
 .wave{
   margin-top: 0px !important;

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planetary Defense</title>
+    <link rel="shortcut icon" type="image/png" href="../images/favicon_P.ico" />
+    <link rel="stylesheet" href="../Css/planete.css" />
+ 
+    <style>
+          body{
+        background-image: url(/images/Naron-bkg.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      font-family: "ethnocentricregular";
+       }
+    </style>
+</head>
+<body>
+    <a href="accueil.html" class="back-button"><img class="return-btn" src="../images/return_button.png" alt="logo tuto fr"/></a>
+
+    <div class="block-progress">
+    <div class="progress">
+        <div class="progress__fill"></div>
+        <span class="progress__text">0%</span>
+    </div>
+    <span class="progress__TLM">100/250 000 TLM</span>
+    </div>
+    <div class="donation">
+        <p class="txt-donation">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores distinctio consequatur non, dolore velit voluptates culpa ipsum corrupti possimus sit suscipit officia deserunt accusantium beatae delectus sunt sapiente in ducimus facere? Rerum magnam dolore voluptas mollitia non ducimus aliquid nesciunt doloremque, vero corrupti dolorum reprehenderit vel laboriosam quisquam officiis quos?
+        </p>
+        <div class="amount">
+                        <p class="txt-amount">Choose your amount</p>
+                        <input class="filter" type="text" id="filter-input" placeholder="amount TLM">
+                    </div>
+        <a href="../html/accueil.html"><img class="img-nav" src="../images/boost_button.png" alt="acceuil" /></a>
+
+    </div>
+    <script>
+
+        function updateProgressBar(progressBar, value) {
+            console.log("salut")
+            value = Math.round(value);
+            progressBar.querySelector(".progress__fill").style.width =`${value}%`;
+            progressBar.querySelector(".progress__text").textContent =`${value}%`;
+        }
+        const pBar = document.querySelector(".progress");
+        updateProgressBar(pBar,40);
+
+    </script>
+</body>
+</html>
